@@ -1,11 +1,11 @@
 footer {
     margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
+    background-color:rgb(255, 1, 1);
+    padding: 5px;
+
   }
 
-  footer a {
-    display: flex;
+  footer h3 {
+    text-align: center;
     align-items: center;
   }

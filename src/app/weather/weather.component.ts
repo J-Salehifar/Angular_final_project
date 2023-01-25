@@ -7,8 +7,9 @@ import { WeatherService } from '../weather.service';
   styleUrls: ['./weather.component.css']
 })
 export class WeatherComponent implements OnInit{
-  weather :any ;
-  temp = Number;
+  weather : any ;
+  city : any ;
+  temp!: number;
   constructor (private weatherService : WeatherService){ }
   
   ngOnInit(): void {
@@ -17,7 +18,8 @@ export class WeatherComponent implements OnInit{
   getWeather(){
     this.weatherService.getWeather().subscribe(index => {
       this.weather = index;
-      this.temp = this.weather['main']['temp']
+      this.temp = this.weather['main']['temp'];
+      this.city = this.weather['name'];
     })
   }
 }

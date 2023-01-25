@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherComponent } from './weather/weather.component';
+import { DetailPageComponent } from './detail-page/detail-page.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { WeatherComponent } from './weather/weather.component';
     HeaderComponent,
     FooterComponent,
     WeatherComponent,
+    DetailPageComponent,
   ],
   imports: [
     BrowserModule,
